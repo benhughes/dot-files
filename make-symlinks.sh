@@ -9,11 +9,13 @@
 # dotfiles directory
 dir=~/code-repo/dot-files
 
-# old dotfiles backup directory
-olddir=~/.dot-files-backup
-
 # list of files/folders to symlink in homedir
 files="zshrc"
+
+date=$(date '+%Y-%m-%d-%H-%M-%S')
+
+# old dotfiles backup directory
+olddir=~/.dot-files-backup/$date
 
 ##########
 
@@ -27,7 +29,7 @@ for file in $files; do
     echo "Moving any existing dotfiles from ~ to $olddir"
     mv ~/.$file $olddir
     echo "Creating symlink to $file in home directory."
-    ln -s $dir/$file ~/.$file
+    ln -s $dir/.$file ~/.$file
 done
 
 
