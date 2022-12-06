@@ -11,7 +11,7 @@ telescope.setup {
     prompt_prefix = " ",
     selection_caret = " ",
     path_display = { "smart" },
-
+     file_ignore_patterns = {"plz-out", "node_modules", "third_party", "experimental"},
     mappings = {
       i = {
         ["<C-n>"] = actions.cycle_history_next,
