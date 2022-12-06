@@ -1,17 +1,3 @@
-# Ensures all kube configs are exported to $KUBECONFIG
-export KUBECONFIG=$HOME/.kube/config
-for file in $HOME/.kube/configs/*.yaml; do
-  export KUBECONFIG=$KUBECONFIG:$file
-done
-
-# Enables kubectl autocompletion
-. <(kubectl completion bash)
-
-# Changes the shell prompt to display which kube context is in use
-# Alternatively edit it directly which will allow for extensive customisation, e.g. showing the current git branch, etc
-PROMPT='[$(kube_ctx_name)]'$PROMPT
-
-
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
