@@ -130,6 +130,10 @@ local mappings = {
       "<cmd>Gitsigns diffthis HEAD<cr>",
       "Diff",
     },
+    t = { 
+      "<cmd>Gitsigns toggle_deleted<cr><cmd>Gitsigns toggle_linehl<cr><cmd>GitSigns toggle_numhl<cr>",
+      "Toggle Git Diff Mode"
+    },
   },
 
   l = {
