@@ -68,3 +68,7 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 -- keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 -- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
+-- gitsigns --
+keymap("n", "∆", ":Gitsigns next_hunk<CR>", opts)
+keymap("n", "˚", ":Gitsigns prev_hunk<CR>", opts)
+keymap("n", "ß", ":Gitsigns stage_hunk<CR>", opts)
