@@ -98,7 +98,7 @@ local mappings = {
   ["m"] = { "<cmd>Telescope marks<cr>", "Search Marks"},
   ["t"] = { "<cmd>Telescope treesitter<cr>", "Search Treesitter"},
   ["P"] = { "<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects" },
-
+  ["u"] = { "<cmd>UndotreeToggle<cr>", "Toggle Undo Tree"},
   p = {
     name = "Packer",
     c = { "<cmd>PackerCompile<cr>", "Compile" },
@@ -130,7 +130,7 @@ local mappings = {
       "<cmd>Gitsigns diffthis HEAD<cr>",
       "Diff",
     },
-    t = { 
+    t = {
       "<cmd>Gitsigns toggle_deleted<cr><cmd>Gitsigns toggle_linehl<cr><cmd>Gitsigns toggle_numhl<cr>",
       "Toggle Git Diff Mode"
     },
