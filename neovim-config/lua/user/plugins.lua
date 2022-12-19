@@ -95,14 +95,18 @@ return packer.startup(function(use)
 
   -- auto-save
   use({
-	"Pocco81/auto-save.nvim",
-	config = function()
-		 require("auto-save").setup {}
-	end,
-})
-	-- Automatically set up your configuration after cloning packer.nvim
-	-- Put this at the end after all plugins
-	if PACKER_BOOTSTRAP then
-		require("packer").sync()
-	end
+    "Pocco81/auto-save.nvim",
+    config = function()
+      require("auto-save").setup {}
+    end,
+  })
+
+  use('mbbill/undotree')
+
+  use('ThePrimeagen/harpoon')
+  -- Automatically set up your configuration after cloning packer.nvim
+  -- Put this at the end after all plugins
+  if PACKER_BOOTSTRAP then
+    require("packer").sync()
+  end
 end)
