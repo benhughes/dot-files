@@ -99,6 +99,7 @@ local mappings = {
   ["t"] = { "<cmd>Telescope treesitter<cr>", "Search Treesitter"},
   ["P"] = { "<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects" },
   ["u"] = { "<cmd>UndotreeToggle<cr>", "Toggle Undo Tree"},
+  ["n"] = { "<cmd>split ~/notes/notes/Workbench.md.md<cr>", "Workbench Note"},
   p = {
     name = "Packer",
     c = { "<cmd>PackerCompile<cr>", "Compile" },
