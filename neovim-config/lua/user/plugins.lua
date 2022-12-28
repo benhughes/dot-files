@@ -101,6 +101,9 @@ return packer.startup(function(use)
     end,
   })
 
+  -- better user experience for interacting with and manipulating Vim marks
+  use('chentoast/marks.nvim')
+
   use('mbbill/undotree')
 
   use('ThePrimeagen/harpoon')
